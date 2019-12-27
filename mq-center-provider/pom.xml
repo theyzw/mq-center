@@ -30,27 +30,9 @@
     <zookeeper.version>3.4.13</zookeeper.version>
     <zkclient.version>0.10</zkclient.version>
     
-    <!--commons-->
-    <commons-collections4.version>4.4</commons-collections4.version>
-    <commons-beanutils.version>1.9.3</commons-beanutils.version>
-    <commons-lang3.version>3.9</commons-lang3.version>
-    <commons-pool2.version>2.6.2</commons-pool2.version>
-    
-    <!--fastjson-->
-    <fastjson.version>1.2.58</fastjson.version>
-    
     <!--jackson-->
-    <jackson.version>2.9.9</jackson.version>
-    <jackson-databind.version>2.9.9.2</jackson-databind.version>
+    <jackson.version>2.10.1</jackson.version>
     
-    <!--lombok-->
-    <lombok.version>1.18.8</lombok.version>
-    
-    <hutool.version>4.5.6</hutool.version>
-    
-    <aspectjweaver.version>1.9.4</aspectjweaver.version>
-    
-    <log4j-over-slf4j.version>1.7.26</log4j-over-slf4j.version>
   </properties>
   
   <dependencies>
@@ -80,6 +62,12 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
       <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>${spring-boot.version}</version>
+      <scope>test</scope>
     </dependency>
     
     <dependency>
@@ -125,7 +113,7 @@
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>log4j-over-slf4j</artifactId>
-      <version>${log4j-over-slf4j.version}</version>
+      <version>1.7.30</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -157,7 +145,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>${jackson-databind.version}</version>
+      <version>${jackson.version}</version>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -173,40 +161,40 @@
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
-      <version>${aspectjweaver.version}</version>
+      <version>1.9.5</version>
     </dependency>
     
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-collections4</artifactId>
-      <version>${commons-collections4.version}</version>
+      <version>4.4</version>
     </dependency>
     <dependency>
       <groupId>commons-beanutils</groupId>
       <artifactId>commons-beanutils</artifactId>
-      <version>${commons-beanutils.version}</version>
+      <version>1.9.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>${commons-lang3.version}</version>
+      <version>3.9</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-pool2</artifactId>
-      <version>${commons-pool2.version}</version>
+      <version>2.8.0</version>
     </dependency>
     
     <dependency>
       <groupId>com.alibaba</groupId>
       <artifactId>fastjson</artifactId>
-      <version>${fastjson.version}</version>
+      <version>1.2.62</version>
     </dependency>
     
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.8</version>
+      <version>1.18.10</version>
     </dependency>
     
     <dependency>
@@ -218,7 +206,7 @@
     <dependency>
       <groupId>cn.hutool</groupId>
       <artifactId>hutool-all</artifactId>
-      <version>${hutool.version}</version>
+      <version>5.1.0</version>
     </dependency>
   
     <dependency>
@@ -234,12 +222,7 @@
       <scope>test</scope>
     </dependency>
     
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <version>2.2.2.RELEASE</version>
-      <scope>test</scope>
-    </dependency>
+    
   
   </dependencies>
   
