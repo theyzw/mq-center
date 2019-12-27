@@ -9,7 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   
-  <artifactId>mq-center-provider</artifactId>
+  <artifactId>test-mq-center-provider</artifactId>
   <version>1.0-SNAPSHOT</version>
   
   <properties>
@@ -38,9 +38,15 @@
   <dependencies>
     <dependency>
       <groupId>com.yk</groupId>
+      <artifactId>test-mq-center-api</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.yk</groupId>
       <artifactId>mq-center-api</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
+    
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-parent</artifactId>
@@ -52,16 +58,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter</artifactId>
       <version>${spring-boot.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-redis</artifactId>
-      <version>${spring-boot.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
-      <version>${spring.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -141,23 +137,6 @@
       <version>${zkclient.version}</version>
     </dependency>
     
-    <!--jackson-->
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-annotations</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-core</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjweaver</artifactId>
@@ -165,48 +144,9 @@
     </dependency>
     
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-collections4</artifactId>
-      <version>4.4</version>
-    </dependency>
-    <dependency>
-      <groupId>commons-beanutils</groupId>
-      <artifactId>commons-beanutils</artifactId>
-      <version>1.9.4</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.9</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-pool2</artifactId>
-      <version>2.8.0</version>
-    </dependency>
-    
-    <dependency>
-      <groupId>com.alibaba</groupId>
-      <artifactId>fastjson</artifactId>
-      <version>1.2.62</version>
-    </dependency>
-    
-    <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.10</version>
-    </dependency>
-    
-    <dependency>
-      <groupId>com.aliyun.openservices</groupId>
-      <artifactId>ons-client</artifactId>
-      <version>1.8.4.Final</version>
-    </dependency>
-    
-    <dependency>
-      <groupId>cn.hutool</groupId>
-      <artifactId>hutool-all</artifactId>
-      <version>5.1.0</version>
     </dependency>
     
     <dependency>
@@ -221,7 +161,6 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
-  
   </dependencies>
   
   <build>

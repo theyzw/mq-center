@@ -11,6 +11,8 @@
   <modules>
     <module>mq-center-api</module>
     <module>mq-center-provider</module>
+    <module>test-mq-center-api</module>
+    <module>test-mq-center-provider</module>
   </modules>
   
   <packaging>pom</packaging>
