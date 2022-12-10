@@ -22,7 +22,7 @@
     
     <!-- unit-test -->
     <junit.version>4.12</junit.version>
-    <spring.version>5.2.2.RELEASE</spring.version>
+    <spring.version>6.0.0</spring.version>
     <spring-boot.version>2.2.2.RELEASE</spring-boot.version>
     
     <!--dubbo-->
